@@ -23,7 +23,7 @@ const VideoDetail = () => {
 
   useEffect(() => {
     setSelectedVideo()
-  }, [])
+  }, [location.search])
 
   return globalState.selected.selected && globalState.selected.selected.id ? (
     <div className={Style.wrap}>
